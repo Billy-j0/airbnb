@@ -1,0 +1,137 @@
+[32m2026-01-07 12:27:40 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - LOGS_CAPTURED - Started capturing logs in process (pid: 24204).
+[32m2026-01-07 12:27:40 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - STEP_START - Started execution of step "airbnb_dbt_assets".
+[32m2026-01-07 12:27:41 +0530[0m - dagster - [34mINFO[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - airbnb_dbt_assets - A dbt subsetted execution is not being performed. Using the default dbt selection arguments `['--select', 'fqn:*']`.
+[32m2026-01-07 12:27:43 +0530[0m - dagster - [34mINFO[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - airbnb_dbt_assets - Copying `/home/william_admin/course/airbnb/target/partial_parse.msgpack` to `/home/william_admin/course/airbnb/target/airbnb_dbt_assets-94a8d0d-3e47ccb/partial_parse.msgpack` to take advantage of partial parsing.
+[32m2026-01-07 12:27:43 +0530[0m - dagster - [34mINFO[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - airbnb_dbt_assets - Running dbt command: `dbt build --select fqn:*`.
+[32m2026-01-07 12:28:02 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - STEP_OUTPUT - Yielded output "seed_full_moon_dates" of type "Nothing". (Type check passed).
+[32m2026-01-07 12:28:02 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - ASSET_MATERIALIZATION - Materialized value seed_full_moon_dates.
+[32m2026-01-07 12:28:10 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - STEP_OUTPUT - Yielded output "scd_raw_hosts" of type "Nothing". (Type check passed).
+[32m2026-01-07 12:28:10 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - ASSET_MATERIALIZATION - Materialized value scd_raw_hosts.
+[32m2026-01-07 12:28:12 +0530[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - airbnb_dbt_assets - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `dbt_expectations_source_expect_column_distinct_count_to_equal_airbnb_listings_room_type__4`.
+
+This test was not included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+[32m2026-01-07 12:28:12 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step airbnb_dbt_assets
+[32m2026-01-07 12:28:14 +0530[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - airbnb_dbt_assets - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `dbt_expectations_source_expect_column_values_to_match_regex_airbnb_listings_price___0_9_0_9_`.
+
+This test was not included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+[32m2026-01-07 12:28:14 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step airbnb_dbt_assets
+[32m2026-01-07 12:28:17 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - STEP_OUTPUT - Yielded output "dim_hosts_cleansed" of type "Nothing". (Type check passed).
+[32m2026-01-07 12:28:17 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - ASSET_MATERIALIZATION - Materialized value dim_hosts_cleansed.
+[32m2026-01-07 12:28:22 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - STEP_OUTPUT - Yielded output "fct_reviews" of type "Nothing". (Type check passed).
+[32m2026-01-07 12:28:23 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - ASSET_MATERIALIZATION - Materialized value fct_reviews.
+[32m2026-01-07 12:28:28 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - STEP_OUTPUT - Yielded output "scd_raw_listings" of type "Nothing". (Type check passed).
+[32m2026-01-07 12:28:28 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - ASSET_MATERIALIZATION - Materialized value scd_raw_listings.
+[32m2026-01-07 12:28:30 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - STEP_OUTPUT - Yielded output "dim_hosts_cleansed_accepted_values_dim_hosts_cleansed_is_superhost__t__f" of type "Any". (Type check passed).
+[32m2026-01-07 12:28:30 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - ASSET_CHECK_EVALUATION - Asset check 'accepted_values_dim_hosts_cleansed_is_superhost__t__f' on 'dim_hosts_cleansed' passed.
+[32m2026-01-07 12:28:32 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - STEP_OUTPUT - Yielded output "dim_hosts_cleansed_not_null_dim_hosts_cleansed_host_id" of type "Any". (Type check passed).
+[32m2026-01-07 12:28:32 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - ASSET_CHECK_EVALUATION - Asset check 'not_null_dim_hosts_cleansed_host_id' on 'dim_hosts_cleansed' passed.
+[32m2026-01-07 12:28:33 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - STEP_OUTPUT - Yielded output "dim_hosts_cleansed_not_null_dim_hosts_cleansed_host_name" of type "Any". (Type check passed).
+[32m2026-01-07 12:28:33 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - ASSET_CHECK_EVALUATION - Asset check 'not_null_dim_hosts_cleansed_host_name' on 'dim_hosts_cleansed' passed.
+[32m2026-01-07 12:28:35 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - STEP_OUTPUT - Yielded output "dim_hosts_cleansed_unique_dim_hosts_cleansed_host_id" of type "Any". (Type check passed).
+[32m2026-01-07 12:28:35 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - ASSET_CHECK_EVALUATION - Asset check 'unique_dim_hosts_cleansed_host_id' on 'dim_hosts_cleansed' passed.
+[32m2026-01-07 12:28:37 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - STEP_OUTPUT - Yielded output "fct_reviews_accepted_values_fct_reviews_review_sentiment__positive__neutral__negative" of type "Any". (Type check passed).
+[32m2026-01-07 12:28:37 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - ASSET_CHECK_EVALUATION - Asset check 'accepted_values_fct_reviews_review_sentiment__positive__neutral__negative' on 'fct_reviews' passed.
+[32m2026-01-07 12:28:38 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - STEP_OUTPUT - Yielded output "fct_reviews_not_null_fct_reviews_reviewer_name" of type "Any". (Type check passed).
+[32m2026-01-07 12:28:38 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - ASSET_CHECK_EVALUATION - Asset check 'not_null_fct_reviews_reviewer_name' on 'fct_reviews' passed.
+[32m2026-01-07 12:28:41 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - STEP_OUTPUT - Yielded output "dim_listings_cleansed" of type "Nothing". (Type check passed).
+[32m2026-01-07 12:28:41 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - ASSET_MATERIALIZATION - Materialized value dim_listings_cleansed.
+[32m2026-01-07 12:28:48 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - STEP_OUTPUT - Yielded output "mart_fullmoon_reviews" of type "Nothing". (Type check passed).
+[32m2026-01-07 12:28:48 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - ASSET_MATERIALIZATION - Materialized value mart_fullmoon_reviews.
+[32m2026-01-07 12:28:50 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - STEP_OUTPUT - Yielded output "dim_listings_cleansed_accepted_values_dim_listings_cleansed_room_type__Entire_home_apt__Private_room__Shared_room__Hotel_room" of type "Any". (Type check passed).
+[32m2026-01-07 12:28:50 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - ASSET_CHECK_EVALUATION - Asset check 'accepted_values_dim_listings_cleansed_room_type__Entire_home_apt__Private_room__Shared_room__Hotel_room' on 'dim_listings_cleansed' passed.
+[32m2026-01-07 12:28:52 +0530[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - airbnb_dbt_assets - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `consistent_created_at`.
+
+`consistent_created_at` is a singular test with multiple dependencies. Configure an asset key in the test's dbt meta to load it as an asset check.
+
+This test was not included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+[32m2026-01-07 12:28:52 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step airbnb_dbt_assets
+[32m2026-01-07 12:28:52 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step airbnb_dbt_assets
+[32m2026-01-07 12:28:53 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - STEP_OUTPUT - Yielded output "dim_listings_cleansed_dim_listings_minimum_nights" of type "Any". (Type check passed).
+[32m2026-01-07 12:28:53 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - ASSET_CHECK_EVALUATION - Asset check 'dim_listings_minimum_nights' on 'dim_listings_cleansed' passed.
+[32m2026-01-07 12:28:55 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - STEP_OUTPUT - Yielded output "dim_listings_cleansed_minimum_row_count_dim_listings_cleansed_1000" of type "Any". (Type check passed).
+[32m2026-01-07 12:28:55 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - ASSET_CHECK_EVALUATION - Asset check 'minimum_row_count_dim_listings_cleansed_1000' on 'dim_listings_cleansed' passed.
+[32m2026-01-07 12:28:57 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - STEP_OUTPUT - Yielded output "dim_listings_cleansed_not_null_dim_listings_cleansed_host_id" of type "Any". (Type check passed).
+[32m2026-01-07 12:28:57 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - ASSET_CHECK_EVALUATION - Asset check 'not_null_dim_listings_cleansed_host_id' on 'dim_listings_cleansed' passed.
+[32m2026-01-07 12:28:58 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - STEP_OUTPUT - Yielded output "dim_listings_cleansed_not_null_dim_listings_cleansed_listing_id" of type "Any". (Type check passed).
+[32m2026-01-07 12:28:58 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - ASSET_CHECK_EVALUATION - Asset check 'not_null_dim_listings_cleansed_listing_id' on 'dim_listings_cleansed' passed.
+[32m2026-01-07 12:29:00 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - STEP_OUTPUT - Yielded output "dim_listings_cleansed_positive_values_dim_listings_cleansed_minimum_nights" of type "Any". (Type check passed).
+[32m2026-01-07 12:29:00 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - ASSET_CHECK_EVALUATION - Asset check 'positive_values_dim_listings_cleansed_minimum_nights' on 'dim_listings_cleansed' passed.
+[32m2026-01-07 12:29:02 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - STEP_OUTPUT - Yielded output "dim_listings_cleansed_relationships_dim_listings_cleansed_host_id__host_id__ref_dim_hosts_cleansed_" of type "Any". (Type check passed).
+[32m2026-01-07 12:29:02 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - ASSET_CHECK_EVALUATION - Asset check 'relationships_dim_listings_cleansed_host_id__host_id__ref_dim_hosts_cleansed_' on 'dim_listings_cleansed' passed.
+[32m2026-01-07 12:29:04 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - STEP_OUTPUT - Yielded output "fct_reviews_relationships_fct_reviews_listing_id__listing_id__ref_dim_listings_cleansed_" of type "Any". (Type check passed).
+[32m2026-01-07 12:29:04 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - ASSET_CHECK_EVALUATION - Asset check 'relationships_fct_reviews_listing_id__listing_id__ref_dim_listings_cleansed_' on 'fct_reviews' did not pass.
+[32m2026-01-07 12:29:06 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - STEP_OUTPUT - Yielded output "dim_listings_cleansed_unique_dim_listings_cleansed_listing_id" of type "Any". (Type check passed).
+[32m2026-01-07 12:29:06 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - ASSET_CHECK_EVALUATION - Asset check 'unique_dim_listings_cleansed_listing_id' on 'dim_listings_cleansed' passed.
+[32m2026-01-07 12:29:09 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - STEP_OUTPUT - Yielded output "dim_listings_w_hosts" of type "Nothing". (Type check passed).
+[32m2026-01-07 12:29:09 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - ASSET_MATERIALIZATION - Materialized value dim_listings_w_hosts.
+[32m2026-01-07 12:29:11 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - STEP_OUTPUT - Yielded output "dim_listings_w_hosts_dbt_expectations_expect_column_max_to_be_between_dim_listings_w_hosts_price__5000" of type "Any". (Type check passed).
+[32m2026-01-07 12:29:11 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - ASSET_CHECK_EVALUATION - Asset check 'dbt_expectations_expect_column_max_to_be_between_dim_listings_w_hosts_price__5000' on 'dim_listings_w_hosts' did not pass.
+[32m2026-01-07 12:29:12 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - STEP_OUTPUT - Yielded output "dim_listings_w_hosts_dbt_expectations_expect_column_quantile_values_to_be_between_dim_listings_w_hosts_price__500__50__0_99" of type "Any". (Type check passed).
+[32m2026-01-07 12:29:12 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - ASSET_CHECK_EVALUATION - Asset check 'dbt_expectations_expect_column_quantile_values_to_be_between_dim_listings_w_hosts_price__500__50__0_99' on 'dim_listings_w_hosts' passed.
+[32m2026-01-07 12:29:14 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - STEP_OUTPUT - Yielded output "dim_listings_w_hosts_dbt_expectations_expect_column_values_to_be_of_type_dim_listings_w_hosts_price__number" of type "Any". (Type check passed).
+[32m2026-01-07 12:29:14 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - ASSET_CHECK_EVALUATION - Asset check 'dbt_expectations_expect_column_values_to_be_of_type_dim_listings_w_hosts_price__number' on 'dim_listings_w_hosts' passed.
+[32m2026-01-07 12:29:16 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - STEP_OUTPUT - Yielded output "dim_listings_w_hosts_dbt_expectations_expect_table_row_count_to_equal_other_table_dim_listings_w_hosts_source_airbnb_listings_" of type "Any". (Type check passed).
+[32m2026-01-07 12:29:16 +0530[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - ASSET_CHECK_EVALUATION - Asset check 'dbt_expectations_expect_table_row_count_to_equal_other_table_dim_listings_w_hosts_source_airbnb_listings_' on 'dim_listings_w_hosts' passed.
+[32m2026-01-07 12:29:19 +0530[0m - dagster - [34mINFO[0m - __ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - airbnb_dbt_assets - Finished dbt command: `dbt build --select fqn:*`.
+[32m2026-01-07 12:29:19 +0530[0m - dagster - [34mERROR[0m - [31m__ASSET_JOB - 94a8d0d3-a735-4911-ac16-e9cb800c2227 - 24204 - airbnb_dbt_assets - STEP_FAILURE - Execution of step "airbnb_dbt_assets" failed.
+
+dagster_dbt.errors.DagsterDbtCliRuntimeError: The dbt CLI process with command
+
+`dbt build --select fqn:*`
+
+failed with exit code `1`. Check the stdout in the Dagster compute logs for the full information about the error, or view the dbt debug log: /home/william_admin/course/airbnb/target/airbnb_dbt_assets-94a8d0d-3e47ccb/dbt.log.
+
+Errors parsed from dbt logs:
+
+24 of 34 FAIL 40 relationships_fct_reviews_listing_id__listing_id__ref_dim_listings_cleansed_  [[31mFAIL 40[0m in 1.99s]
+
+[31mFailure in test relationships_fct_reviews_listing_id__listing_id__ref_dim_listings_cleansed_ (models/schema.yml)[0m
+
+  Got 40 results, configured to fail if != 0
+
+Stack Trace:
+  File "/home/william_admin/course/venv/lib/python3.13/site-packages/dagster/_core/execution/plan/execute_plan.py", line 247, in dagster_event_sequence_for_step
+    yield from check.generator(step_events)
+  File "/home/william_admin/course/venv/lib/python3.13/site-packages/dagster/_core/execution/plan/execute_step.py", line 504, in core_dagster_event_sequence_for_step
+    for user_event in _step_output_error_checked_user_event_sequence(
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        step_context,
+        ^^^^^^^^^^^^^
+        _process_asset_results_to_events(step_context, user_event_sequence),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "/home/william_admin/course/venv/lib/python3.13/site-packages/dagster/_core/execution/plan/execute_step.py", line 183, in _step_output_error_checked_user_event_sequence
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+  File "/home/william_admin/course/venv/lib/python3.13/site-packages/dagster/_core/execution/plan/execute_step.py", line 88, in _process_asset_results_to_events
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+  File "/home/william_admin/course/venv/lib/python3.13/site-packages/dagster/_core/execution/plan/compute.py", line 190, in execute_core_compute
+    for step_output in _yield_compute_results(step_context, inputs, compute_fn, compute_context):
+                       ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/william_admin/course/venv/lib/python3.13/site-packages/dagster/_core/execution/plan/compute.py", line 159, in _yield_compute_results
+    for event in iterate_with_context(
+                 ~~~~~~~~~~~~~~~~~~~~^
+        lambda: op_execution_error_boundary(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+        user_event_generator,
+        ^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "/home/william_admin/course/venv/lib/python3.13/site-packages/dagster/_utils/__init__.py", line 392, in iterate_with_context
+    next_output = next(iterator)
+  File "/home/william_admin/course/airbnb/my_dbt_dagster_project/my_dbt_dagster_project/assets.py", line 9, in airbnb_dbt_assets
+    yield from dbt.cli(["build"], context=context).stream()
+  File "/home/william_admin/course/venv/lib/python3.13/site-packages/dagster_dbt/core/dbt_event_iterator.py", line 215, in __next__
+    return next(self._inner_iterator)
+  File "/home/william_admin/course/venv/lib/python3.13/site-packages/dagster_dbt/core/dbt_cli_invocation.py", line 289, in _stream_asset_events
+    for event in self.stream_raw_events():
+                 ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/william_admin/course/venv/lib/python3.13/site-packages/dagster_dbt/core/dbt_cli_invocation.py", line 382, in stream_raw_events
+    self._raise_on_error()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/william_admin/course/venv/lib/python3.13/site-packages/dagster_dbt/core/dbt_cli_invocation.py", line 475, in _raise_on_error
+    raise error
+[0m
